@@ -1,5 +1,8 @@
 # custom-web-components
 
+[![npm version](https://img.shields.io/npm/v/@adailtonribeiro/custom-web-components.svg?style=flat-square)](https://www.npmjs.org/package/@adailtonribeiro/custom-web-components)
+[![npm downloads](https://img.shields.io/npm/dm/@adailtonribeiro/custom-web-components.svg?style=flat-square)](http://npm-stat.com/charts.html?package=@adailtonribeiro/custom-web-components)
+
 ### Basic usage 
 
 **ar-modal** example:
@@ -25,5 +28,5 @@
 
 Put the script tag below in the head of your index.html
 ```html
-<script src="https://unpkg.com/@adailtonribeiro/custom-web-components@0.0.3/dist/ar-cwc.js"></script>
+<script src="https://unpkg.com/@adailtonribeiro/custom-web-components@0.0.4/dist/ar-cwc.js"></script>
 ```
