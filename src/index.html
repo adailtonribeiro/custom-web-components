@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>ArModal</title>
+  <script src="/build/ar-cwc.js"></script>
+
+</head>
+<body>
+
+<button id="btnOpenModal">Open Modal</button>
+<button id="btnOpenTab">Open Tab</button>
+
+<ar-modal modal-title="My First Modal">
+  <div slot="item-body">
+    <h3>My modal body</h3>
+  </div>
+  <div slot="item-footer">
+    <h3>My modal footer</h3>
+  </div>
+</ar-modal>
+
+<ar-tab tab-title="My First Tab">
+  <div slot="item-body">
+    <h3>My tab body</h3>
+  </div>
+  <div slot="item-footer">
+    <h3>My tab footer</h3>
+  </div>
+</ar-tab>
+
+<script>
+  var btnOpenModal = document.querySelector('#btnOpenModal');
+  var arModal = document.querySelector('ar-modal');
+  var btnOpenTab = document.querySelector('#btnOpenTab');
+  var arTab = document.querySelector('ar-tab');
+
+  btnOpenModal.addEventListener('click', function () {
+    arModal.open();
+  });
+  btnOpenTab.addEventListener('click', function () {
+    arTab.open();
+  });
+</script>
+
+</body>
+</html>
