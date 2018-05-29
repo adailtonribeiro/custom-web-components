@@ -1,0 +1,21 @@
+.progress-container {
+  display: flex;
+  height: var(--progress-height, 20px);
+  background: var(--progress-background, lightgrey);
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.progress-bar {
+  background: var(--progress-color, #5cb85c);
+  width: calc(var(--current-value, 0) * 100% / var(--max-value, 100));
+}
+
+.progress-value {
+  position: fixed;
+  left: 50%;
+}
+
+.progress-bar-remainder {
+  flex: 1;
+}

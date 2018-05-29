@@ -12,3 +12,9 @@
   </div>
 </ar-modal>
 ```
+
+**ar-progress-bar** example:
+
+```html
+<ar-progress-bar value="10"></ar-progress-bar>
+```

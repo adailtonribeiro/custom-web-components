@@ -62,33 +62,36 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface ArTab {
-      'close': () => void;
-      'open': () => void;
-      'tabTitle': string;
+    interface ArProgressBar {
+      'max': number;
+      'start': () => void;
+      'step': number;
+      'value': number;
     }
   }
 
-  interface HTMLArTabElement extends StencilComponents.ArTab, HTMLStencilElement {}
+  interface HTMLArProgressBarElement extends StencilComponents.ArProgressBar, HTMLStencilElement {}
 
-  var HTMLArTabElement: {
-    prototype: HTMLArTabElement;
-    new (): HTMLArTabElement;
+  var HTMLArProgressBarElement: {
+    prototype: HTMLArProgressBarElement;
+    new (): HTMLArProgressBarElement;
   };
   interface HTMLElementTagNameMap {
-    'ar-tab': HTMLArTabElement;
+    'ar-progress-bar': HTMLArProgressBarElement;
   }
   interface ElementTagNameMap {
-    'ar-tab': HTMLArTabElement;
+    'ar-progress-bar': HTMLArProgressBarElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'ar-tab': JSXElements.ArTabAttributes;
+      'ar-progress-bar': JSXElements.ArProgressBarAttributes;
     }
   }
   namespace JSXElements {
-    export interface ArTabAttributes extends HTMLAttributes {
-      'tabTitle'?: string;
+    export interface ArProgressBarAttributes extends HTMLAttributes {
+      'max'?: number;
+      'step'?: number;
+      'value'?: number;
     }
   }
 }
