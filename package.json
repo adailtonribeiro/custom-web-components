@@ -16,7 +16,8 @@
     "start": "npm run dev",
     "test": "jest",
     "test.watch": "jest --watch",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "publish-npm": "npm publish --access=public"
   },
   "dependencies": {},
   "devDependencies": {
